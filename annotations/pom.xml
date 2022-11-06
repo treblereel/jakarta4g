@@ -3,18 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.treblereel.gwt.jakarta</groupId>
         <artifactId>parent</artifactId>
+        <groupId>org.treblereel.gwt.jakarta</groupId>
         <version>0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
 
-    <groupId>org.treblereel.gwt.jakarta.jsonb</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>annotations</artifactId>
+    <packaging>jar</packaging>
 
-    <name>GWT/J2CL compatible Jakarta JSON-B Specs parent</name>
-    <description>GWT/J2CL compatible Jakarta JSON-B Specs parent</description>
+    <name>GWT/J2CL compatible Jakarta Annotations</name>
+    <description>GWT/J2CL compatible Jakarta Annotations</description>
     <url>https://github.com/treblereel</url>
 
     <developers>
@@ -38,18 +37,31 @@
         <url>https://github.com/treblereel</url>
     </organization>
 
-    <modules>
-        <module>api</module>
-    </modules>
-
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.java</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
