@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package java.util.regex;
+package util.regex;
 
 import elemental2.core.JsRegExp;
 import elemental2.core.RegExpResult;
