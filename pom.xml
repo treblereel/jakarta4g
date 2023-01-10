@@ -67,11 +67,12 @@
 
     <modules>
         <module>annotations</module>
-        <module>utils</module>
-        <module>jsonb</module>
+        <module>enterprise</module>
         <module>inject</module>
+        <module>jsonb</module>
         <module>jaxb</module>
         <module>stdlib</module>
+        <module>utils</module>
     </modules>
 
     <dependencyManagement>

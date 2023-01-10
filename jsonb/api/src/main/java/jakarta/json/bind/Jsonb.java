@@ -17,7 +17,7 @@
 package jakarta.json.bind;
 
 import java.lang.reflect.Type;
-import org.treblereel.gwt.jakarta.utils.GwtIncompatible;
+import org.treblereel.gwt.utils.GwtIncompatible;
 
 /**
  * {@code Jsonb} provides an abstraction over the JSON Binding framework operations:

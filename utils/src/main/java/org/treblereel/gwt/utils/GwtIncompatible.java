@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.treblereel.gwt.jakarta.utils;
+package org.treblereel.gwt.utils;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
