@@ -67,6 +67,7 @@
 
     <modules>
         <module>annotations</module>
+        <module>ejb</module>
         <module>enterprise</module>
         <module>inject</module>
         <module>jsonb</module>
@@ -78,7 +79,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <groupId>org.treblereel.gwt</groupId>
                 <artifactId>utils</artifactId>
                 <version>${project.version}</version>
             </dependency>
