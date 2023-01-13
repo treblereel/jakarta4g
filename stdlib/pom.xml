@@ -5,11 +5,10 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>org.treblereel.gwt.jakarta</groupId>
-        <version>0.2-SNAPSHOT</version>
+        <version>0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.treblereel.gwt</groupId>
     <artifactId>stdlib</artifactId>
     <packaging>jar</packaging>
 
@@ -46,7 +45,6 @@
         <dependency>
             <groupId>org.treblereel.gwt.nio</groupId>
             <artifactId>gwt-nio</artifactId>
-            <version>1.1</version>
         </dependency>
     </dependencies>
 

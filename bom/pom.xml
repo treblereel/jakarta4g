@@ -6,7 +6,7 @@
 
     <groupId>org.treblereel.gwt.jakarta</groupId>
     <artifactId>bom</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
     <packaging>pom</packaging>
 
 
@@ -75,12 +75,12 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.treblereel.gwt</groupId>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>stdlib</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.treblereel.gwt</groupId>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>utils</artifactId>
                 <version>${project.version}</version>
             </dependency>
