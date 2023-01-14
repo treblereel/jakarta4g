@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.treblereel.gwt.jakarta</groupId>
+    <artifactId>bom</artifactId>
+    <version>0.2</version>
+    <packaging>pom</packaging>
+
+
+    <name>BOM (Bill Of Materials)</name>
+    <description>Jakarta specs for GWT/J2CL</description>
+    <url>https://github.com/treblereel</url>
+
+    <developers>
+        <developer>
+            <id>treblereel</id>
+            <name>Dmitrii Tikhomirov</name>
+            <email>chani.liet@gmail.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Treblereel</name>
+        <url>https://github.com/treblereel</url>
+    </organization>
+
+    <scm>
+        <url>https://github.com/treblereel/jakarta-specs</url>
+        <developerConnection>scm:git:git@github.com:treblereel/jakarta-specs.git</developerConnection>
+        <connection>scm:git:git://github.com/treblereel/jakarta-specs.git</connection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
+        <maven.deploy.plugin.version>3.0.0-M2</maven.deploy.plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <artifactId>inject</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <artifactId>ejb</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <artifactId>enterprise</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta.jaxb</groupId>
+                <artifactId>api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta.jsonb</groupId>
+                <artifactId>api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <artifactId>stdlib</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.treblereel.gwt.jakarta</groupId>
+                <artifactId>utils</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${maven.gpg.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-deploy-plugin</artifactId>
+                        <version>${maven.deploy.plugin.version}</version>
+                        <configuration>
+                            <skip>false</skip>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+</project>
