@@ -11,6 +11,7 @@
 
     <artifactId>enterprise</artifactId>
     <packaging>jar</packaging>
+    <version>0.5</version>
 
     <name>GWT/J2CL compatible Jakarta Enterprise</name>
     <description>GWT/J2CL compatible Jakarta Enterprise</description>

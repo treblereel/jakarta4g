@@ -11,6 +11,7 @@
 
     <artifactId>inject</artifactId>
     <packaging>jar</packaging>
+    <version>0.5</version>
 
     <name>GWT/J2CL compatible Jakarta Inject spec</name>
     <description>GWT/J2CL compatible Inject spec</description>
