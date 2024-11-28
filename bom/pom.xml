@@ -6,7 +6,7 @@
 
     <groupId>org.treblereel.gwt.jakarta</groupId>
     <artifactId>bom</artifactId>
-    <version>0.5</version>
+    <version>0.6</version>
     <packaging>pom</packaging>
 
 
@@ -52,42 +52,42 @@
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>annotations</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>inject</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>ejb</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>enterprise</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta.jaxb</groupId>
                 <artifactId>api</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta.jsonb</groupId>
                 <artifactId>api</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>stdlib</artifactId>
-                <version>${project.version}</version>
+                <version>0.6</version>
             </dependency>
             <dependency>
                 <groupId>org.treblereel.gwt.jakarta</groupId>
                 <artifactId>utils</artifactId>
-                <version>${project.version}</version>
+                <version>0.5</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

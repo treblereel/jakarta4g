@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
+    <version>0.5</version>
 
     <groupId>org.treblereel.gwt.jakarta.jaxb</groupId>
     <artifactId>parent</artifactId>

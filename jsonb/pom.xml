@@ -12,6 +12,7 @@
 
     <groupId>org.treblereel.gwt.jakarta.jsonb</groupId>
     <artifactId>parent</artifactId>
+    <version>0.5</version>
 
     <name>GWT/J2CL compatible Jakarta JSON-B Specs parent</name>
     <description>GWT/J2CL compatible Jakarta JSON-B Specs parent</description>

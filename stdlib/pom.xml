@@ -11,6 +11,7 @@
 
     <artifactId>stdlib</artifactId>
     <packaging>jar</packaging>
+    <version>0.6</version>
 
     <name>GWT/J2CL compatible missed classes from stdlib</name>
     <description>GWT/J2CL missed classes from stdlib</description>
